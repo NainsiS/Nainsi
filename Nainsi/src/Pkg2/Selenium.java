@@ -24,27 +24,5 @@ public class Selenium
  MobileNo.sendKeys("2622626666");
  WebElement NewPassword=driver.findElementById("u_0_x");
  NewPassword.sendKeys("Hbss2004");
- WebElement day=driver.findElementById("day");
- day.sendKeys("14");
- WebElement month=driver.findElementById("month");
- month.sendKeys("November");
- try {
- WebElement Year=driver.findElementById("Year");
- Year.sendKeys("1996");
  }
- catch (Exception e) {
-	// TODO: handle exception
-	 System.out.println("Year has the problem");
-}
- 
- WebElement Gender=driver.findElement(By.name("sex"));
- Gender.click();
- WebElement Signup=driver.findElement(By.name("websubmit"));
- Signup.click();
- 
-
-
- 
-}
-	
 }
